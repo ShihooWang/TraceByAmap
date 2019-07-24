@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- 对话框 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/android:transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

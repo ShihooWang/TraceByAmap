@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.amap.api.maps.MapView>
+
+    <TextView
+        android:id="@+id/location_errInfo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/red"
+        android:textColor="@color/darkgrey"
+        android:text="TextView" 
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/spinner_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/gps_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/gps_show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_locate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gpslocate"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_follow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gpsfollow"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_rotate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gpsrotate"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+        <RadioButton
+            android:id="@+id/gps_rotate_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="旋转位置"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_follow_button_nocenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="跟随不移动中心点"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_rotate_button_nocenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="旋转不移动到中心点"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gps_rotate_location_button_nocenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="旋转位置不移动到中心点"
+            android:textSize="12sp"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+</FrameLayout>

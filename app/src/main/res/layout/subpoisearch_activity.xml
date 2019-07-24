@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <RelativeLayout
+        android:id="@+id/temp_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+        <AutoCompleteTextView 
+            android:id="@+id/keyword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/search_btn"
+            android:layout_alignTop="@+id/search_btn"
+            android:layout_toLeftOf="@id/search_btn"
+            android:gravity="center_vertical"
+            android:completionThreshold="1"
+            android:dropDownVerticalOffset="1.0dip"
+            android:hint="请输入关键字"
+            android:text="清华大学"
+            android:textColorHint="@color/gary"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+        <Button 
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="SEARCH"
+            android:textSize="14.0sp"/>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/listView" 
+        android:layout_width="match_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_margin="5dp">
+        
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="最小级别 默认 3"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/text_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="最大级别 默认 19 室内 20"
+            android:inputType="number" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="set"
+            android:text="设置" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:text="重置" />
+
+        <TextView
+            android:id="@+id/text_current_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前缩放级别为："/>
+
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

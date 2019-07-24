@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 轨迹纠偏按钮 -->
+
+    <LinearLayout
+        android:id="@+id/top_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/grasp_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/draw_lines" />
+
+        <Button
+            android:id="@+id/clean_finish_overlay_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/clean_finished_overlay_status" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_button" >
+
+        <!-- 地图控件 -->
+
+        <com.amap.api.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.amap.api.maps.MapView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/translucent"
+            android:orientation="vertical"
+            android:padding="@dimen/trace_spinner_padding" >
+
+            <!-- assets 轨迹选择 -->
+
+            <Spinner
+                android:id="@+id/record_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- 轨迹纠偏坐标系选择 高德 | GPS | 百度 -->
+
+            <RadioGroup
+                android:id="@+id/coordinate_type_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_padding"
+                android:orientation="vertical"
+                android:padding="@dimen/trace_spinner_padding" >
+
+                <RadioButton
+                    android:id="@+id/button_amap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/radiobutton_gaode"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/button_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton_gps"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/button_baidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton_baidu"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/margin_padding"
+            android:layout_marginStart="@dimen/margin_padding"
+            android:layout_marginTop="@dimen/margin_padding"
+            android:orientation="vertical" >
+
+            <!-- 总里程结果展示 -->
+
+            <TextView
+                android:id="@+id/show_all_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            <!-- 停车时长结果展示 -->
+
+            <TextView
+                android:id="@+id/show_low_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stop_time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

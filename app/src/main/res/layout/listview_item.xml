@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/poititle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+    <com.amap.map3d.demo.poisearch.NoScrollGridView
+        android:id="@+id/listview_item_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"  
+        android:verticalSpacing="10dp"  
+        android:horizontalSpacing="5dp"  
+        android:columnWidth="80dp"  
+        android:stretchMode="columnWidth"/>
+</LinearLayout>

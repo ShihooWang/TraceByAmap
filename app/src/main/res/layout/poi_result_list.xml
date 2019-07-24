@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+   <TextView  
+    android:id="@+id/poiName"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:singleLine="true"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:gravity="center_vertical"
+    android:textSize="16.0sp" 
+    android:textColor="#ff000000"
+    />
+   <TextView  
+    android:id="@+id/poiAddress"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:singleLine="true"
+    android:textColor="#ff464646"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingBottom="10dp"
+    android:gravity="center_vertical"
+    />
+</LinearLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="animate">Animate</string>
+    <string name="basic_map">显示地图</string>
+    <string name="basic_description">介绍如何创建一个基本地图</string>
+    <string name="basic_map_6">显示地图(6种实现地图的方式)</string>
+    <string name="basic_description_temp">介绍6种实现地图方式</string>
+    <string name="basic_texturemapview">显示地图(TextureMapView)</string>
+    <string name="basic_texturemapview_description">介绍如何使用TextureMapview创建一个基本地图</string>
+    <string name="base_fragment_map">Fragment创建地图</string>
+    <string name="base_fragment_description">介绍SupportMapFragment方式创建地图</string>
+    <string name="camera_demo">改变地图中心点</string>
+    <string name="camera_description">介绍在地图中操作Camera各种功能</string>
+    <string name="heatmap_demo">热力图功能</string>
+    <string name="heatmap_description">介绍在地图中如何绘制热力图</string>
+
+    <string name="viewpager_map">ViewPager TextureMapView</string>
+    <string name="viewpger_map_description">介绍如何在ViewPager中添加Map(防止滑动时黑屏)</string>
+    <string name="clear_map">Clear</string>
+    <string name="compass">指南针</string>
+    <string name="custom_info_contents">Custom info contents</string>
+    <string name="custom_info_window">Custom info window</string>
+    <string name="default_info_window">Default info window</string>
+    <string name="demo_title">3D地图示例</string>
+    <string name="down_arrow">\u2193</string>
+    <string name="drag_melbourne">Drag Melbourne</string>
+    <string name="events_demo">Events功能</string>
+    <string name="events_description">介绍对地图的点击，长按，拖动地图事件功能</string>
+    <string name="fill_stroke">Fill Stroke</string>
+    <string name="fill_color">Fill Color</string>
+    <string name="go_to_zhongguancun">中关村</string>
+    <string name="go_to_lujiazui">陆家嘴</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="location">正在定位中</string>
+    <string name="gpsfollow">追随</string>
+    <string name="gpslocate">定位</string>
+    <string name="gpsrotate">旋转</string>
+
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/satellite</item>
+        <item>@string/night_mode</item>
+        <item>@string/navi_mode</item>
+    </string-array>
+
+    <string name="poiclick_demo">地图Poi点击功能</string>
+    <string name="poiclick_description">介绍地图底图poi点击事件和处理</string>
+    <string name="layers_demo">Layers图层功能</string>
+    <string name="layers_description">介绍地图图层控制</string>
+    <string name="left_arrow">\u2190</string>
+    <string name="locationSensorGPS_demo">gps追随功能</string>
+    <string name="locationSensorGPS_demo_description">介绍如何用gps定位图标箭头随手机转动而转动</string>
+    <string name="locationsource_demo">Location小蓝点功能</string>
+    <string name="locationsource_description">介绍对系统定位显示小蓝点功能</string>
+    <string name="locationmodesource_demo_old">Location几种模式_5.0.0之前的实现</string>
+    <string name="locationmodesource_demo">Location几种模式</string>
+    <string name="locationmodesource_description">介绍定位、追随、旋转等选择不同模式使用</string>
+    <string name="locationGPS_demo">gps定位功能</string>
+    <string name="locationGPS_description">介绍如何使用gps定位</string>
+    <string name="locationNetwork_description">介绍如何使用网络定位</string>
+    <string name="locationNetwork_demo">网络定位功能</string>
+    <string name="marker_demo">Markers功能</string>
+    <string name="marker_description">介绍在地图上添加marker和infoWindow</string>
+    <string name="mapOption_demo">AMapOptions实现地图</string>
+    <string name="mapOption_description">介绍用AMapOptions展示一个地图</string>
+    <string name="map_not_ready">SupportMapFragment初始化失败</string>
+    <string name="move_the_camera">移动camera</string>
+    <string name="touch_the_map">地图触摸事件</string>
+    <string name="my_location">My Location</string>
+    <string name="mylocation_layer">我的位置图层</string>
+    <string name="no_demos">No demos</string>
+    <string name="normal">Normal</string>
+    <string name="night_mode">Night</string>
+    <string name="navi_mode">Navi</string>
+    <string name="polygon_demo">Polygons功能</string>
+    <string name="polygon_description">介绍在地图绘制多边形</string>
+    <string name="polyline_demo">Polylines功能</string>
+    <string name="polyline_description">介绍在地图中绘制线条</string>
+    <string name="groundoverlay_demo">GroundOverlay功能</string>
+    <string name="groundoverlay_description">介绍在地图中绘制GroundOverlay功能</string>
+    <string name="circle_demo">Circles功能</string>
+    <string name="circle_description">介绍在地图中绘制圆形</string>
+    <string name="navigatearrow_demo">NavigateArrow功能</string>
+    <string name="navigatearrow_description">介绍如何在地图中绘制导航指示箭头功能</string>
+    <string name="multipoint_demo">海量点功能</string>
+    <string name="multipoint_description">地图添加海量点功能</string>
+    <string name="arc_demo">绘制弧线</string>
+    <string name="arc_description">介绍在地图中绘制弧形</string>
+    <string name="screenshot_demo">地图截屏功能</string>
+    <string name="screenshot_description">介绍对地图进行截屏</string>
+    <string name="set_min_max_zoomlevel">限制缩放级别功能</string>
+    <string name="set_min_max_zoomlevel_description">介绍对地图进行最小最大级别的设置</string>
+    <string name="limit_bounds">限制显示区域功能</string>
+    <string name="limit_bounds_description">介绍对地图进行限制显示区域的设置</string>
+    <string name="properties_polyline">设置Polyline属性</string>
+    <string name="properties_polygon">设置Polygon属性</string>
+    <string name="properties_circle">设置Circle属性</string>
+    <string name="busline_demo">Busline公交查询</string>
+    <string name="busline_description">介绍如何在地图中绘制BusLine</string>
+    <string name="route_demo">Route路径规划</string>
+    <string name="route_description">介绍如何在地图中绘制Route</string>
+    <string name="cloud_demo">云图检索</string>
+    <string name="cloud_description">介绍云图检索功能</string>
+    <string name="indoormap_demo">室内地图功能</string>
+    <string name="indoormap_description">室内地图功能展示</string>
+    <string name="rotate">旋转手势</string>
+    <string name="reset_map">Reset</string>
+    <string name="marker_animation_grow">生长动画</string>
+    <string name="marker_animation_jump">移动动画</string>
+    <string name="marker_animation_breathe">呼吸动画</string>
+    <string name="right_arrow">\u2192</string>
+    <string name="satellite">Satellite</string>
+    <string name="scroll">滑动手势</string>
+    <string name="stop_animation">\u25A0</string>
+    <string name="stroke_width">Stroke Width</string>
+    <string name="tap_instructions">点击或者长按地图</string>
+    <string name="terrain">Terrain</string>
+    <string name="tilt">倾斜手势</string>
+    <string name="traffic">Traffic</string>
+    <string name="buildings">Buildings</string>
+    <string name="maptext">MapText</string>
+    <string name="transparency">Transparency</string>
+    <string name="opengl_demo">Opengl接口功能</string>
+    <string name="opengl_description">介绍地图中开放Opengl接口功能</string>
+    <string name="uisettings_demo">UI Settings功能</string>
+    <string name="uisettings_description">介绍地图中UI Settings功能</string>
+    <string name="geocoder_demo">地理编码 功能</string>
+    <string name="geocoder_description">介绍 geocoder地理编码 功能</string>
+    <string name="poikeywordsearch_demo">poi关键字搜索</string>
+    <string name="poikeywordsearch_description">介绍poi关键字搜索功能</string>
+    <string name="poiaroundsearch_demo">poi周边搜索</string>
+    <string name="poiaroundsearch_description">介绍poi周边搜索功能</string>
+    <string name="offlinemap_demo">离线地图功能(已过时)</string>
+    <string name="offlinemap_description">介绍如何使用离线地图</string>
+    <string name="offlinemap_ui_demo">离线地图功能(组件包含UI)</string>
+    <string name="offlinemap_ui_description">介绍如何使用离线地图组件</string>
+    <string name="district_demo">行政区划查询</string>
+    <string name="district_description">政区划查询功能演示</string>
+    <string name="district_boundary_demo">行政区划边界查询</string>
+    <string name="district_boundary_description">政区划查询功能返回边界演示</string>
+    <string name="search_title">搜索关键字</string>
+    <string name="up_arrow">\u2191</string>
+    <string name="width">Width</string>
+    <string name="zoom_position">zoom显示及位置</string>
+    <string name="zoom_buttons">显示</string>
+    <string name="zoom_gestures">缩放手势</string>
+    <string name="zoom_in">+</string>
+    <string name="zoom_out">—</string>
+    <string name="scale">比例尺</string>
+    <string name="buttonScale">获取比例尺</string>
+
+    <!-- offlinemap -->
+    <string name="beijing">"北京"</string>
+    <string name="start">"开始"</string>
+    <string name="pause">"暂停"</string>
+    <string name="stop">"停止"</string>
+    <string name="remove">"删除"</string>
+    <string name="update">"更新"</string>
+    <string name="logo_position">logo位置</string>
+    <string name="bottom_left">左下</string>
+    <string name="bottom_center">底部居中</string>
+    <string name="bottom_right">右下</string>
+    <string name="center_right">右中</string>
+    <string name="map_screenshot">地图截屏</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+    <string name="province">省</string>
+    <string name="city">市</string>
+    <string name="district">区/县</string>
+    <string name="all_offline">所有城市</string>
+    <string name="download_offline">下载管理</string>
+    <string name="city_name">城市名称</string>
+    <string name="city_size">城市大小</string>
+    <string name="download_progress">0%</string>
+    <string name="my_city">当前城市</string>
+    <string name="sso_complete">完成</string>
+    <string name="share_demo">短串分享</string>
+    <string name="share_description">短串分享功能演示</string>
+    <string name="weather_demo">天气查询</string>
+    <string name="weather_description">天气预报功能</string>
+    <string name="subpoi_demo">POI父子关系</string>
+    <string name="subpoi_description">介绍POI的父子关系功能</string>
+    <string name="weather_live">实时</string>
+    <string name="weather_forecast">预报</string>
+    <string name="report_time">发布时间</string>
+    <string name="location_share">位置分享</string>
+    <string name="route_share">路径规划分享</string>
+    <string name="poi_share">POI分享</string>
+    <string name="navi_share">导航分享</string>
+    
+    <string name="map_create">创建地图</string>
+    <string name="map_interactive">地图交互</string>
+    <string name="map_overlay">地图上绘制</string>
+    <string name="search_data">查询地图数据</string>
+    <string name="search_route">出行路线规划</string>
+    <string name="map_offline">离线地图</string>
+    <string name="map_tools">地图计算工具</string>
+    <string name="search_share">短串分享</string>
+    <string name="map_expand">扩展功能</string>
+    <string name="blank"></string>
+    <string name="multi_inst">地图多实例</string>
+    <string name="logo">地图Logo位置</string>
+    <string name="gesture">手势交互</string>
+    <string name="inputtips_demo">输入提示</string>
+    <string name="inputtips_description">输入提示功能</string>
+    <string name="geodesic_demo">绘制大地曲线</string>
+    <string name="geodesic_description">绘制大地曲线功能</string>
+    <string name="colourline_demo">绘制多彩线</string>
+    <string name="colourline_description">绘制多彩线功能</string>
+    <string name="regeocoder_demo">逆地理编码功能</string>
+    <string name="regeocoder_description">介绍regeocoder逆地理编码功能</string>
+    <string name="map_zoom">自定义缩放</string>
+    <string name="animate_demo">地图动画效果</string>
+    <string name="animate_description">animate</string>
+    <string name="custommarker_demo">自定义Marker</string>
+    <string name="route_drive">驾车路径规划</string>
+    <string name="route_plan_drive">驾车未来路径规划</string>
+    <string name="route_bus">公交路径规划</string>
+    <string name="route_walk">步行路径规划</string>
+    <string name="route_ride">骑行路径规划</string>
+    <string name="route_truck">货车路径规划</string>
+    <string name="route_distance">距离测量</string>
+    <string name="busstation_demo">公交站点查询</string>
+    <string name="poiidsearch_demo">poiID搜索功能</string>
+    <string name="customlocation_demo">Location小蓝点自定义功能</string>
+    <string name="customlocationmode_demo">Location小蓝点自定义模式</string>
+    <string name="location_rotatemarker">定位箭头旋转</string>
+    <string name="marker_click">Marker点击回调</string>
+    <string name="marker_animation_demo">Marker动画功能</string>
+    <string name="marker_animation_description">介绍Marker动画功能</string>
+    <string name="infowindow_demo">InfoWindow功能</string>
+    <string name="tileoverlay_demo">TileOverlay绘制</string>
+    <string name="coordconvert_demo">坐标系转换</string>
+    <string name="contains_demo">点是否在多边形内</string>
+    <string name="calculateLineDistance">两点间距离</string>
+    <string name="convertgeo2point_demo">经纬度转屏幕像素</string>
+    <string name="routepoisearch_demo">沿途搜索</string>
+
+    <string name="traffic_demo">交通态势</string>
+    <string name="traffic_decription">交通态势示例</string>
+
+    <!-- 轨迹纠偏 -->
+    <string name="trace_demo">轨迹纠偏功能</string>
+    <string name="trace_description">将轨迹平滑的绘制在地图上</string>
+    <string name="trace_demo_simple">轨迹纠偏功能_便捷版</string>
+    <string name="trace_description_simple">将轨迹平滑的绘制在地图上，接口使用更简单</string>
+
+    <string name="distance">"总距离："</string>
+    <string name="stop_time">"等   待："</string>
+    <string name="draw_lines">轨迹纠偏</string>
+    <string name="clean_finished_overlay_status">清除已完成线路</string>
+    <string name="radiobutton_gaode">高德坐标</string>
+    <string name="radiobutton_gps">GPS坐标</string>
+    <string name="radiobutton_baidu">百度坐标</string>
+
+
+    <string name="trace_location_start">开始记录</string>
+    <string name="trace_location_stop">停止记录</string>
+
+    <!-- marker 平滑移动 -->
+    <string name="smooth_move_demo">平滑移动</string>
+    <string name="smooth_move_description">应用于出行应用的小车平滑移动</string>
+
+
+    <!-- 自定义样式 -->
+    <string name="style_custom_on">开启个性化地图</string>
+    <string name="style_custom_off">关闭个性化地图</string>
+    <string name="buildingoverlay">自定义建筑物</string>
+
+    <string name="hole_title">绘制空心多边形</string>
+    <string name="hole_demo">绘制空心多边形功能</string>
+    <string name="hole_decription">介绍如何绘制空心多边形</string>
+
+    <string name="province_hole_demo">显示单个省份地图</string>
+    <string name="province_hole_decription">介绍如何使用空心多边形显示单个省份地图</string>
+    <string name="list_map">地图ListView</string>
+    <string name="recycle_map">地图Recycle</string>
+
+    <string name="particle_demo">粒子效果</string>
+    <string name="particle_decription">粒子效果示例</string>
+    <string name="particle_weather_demo">粒子效果+天气示例</string>
+    <string name="particle_weather_decription">粒子效果+天气示例</string>
+
+</resources>

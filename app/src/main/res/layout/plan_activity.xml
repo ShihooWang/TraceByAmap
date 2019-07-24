@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/act_background">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/route_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_below="@id/routemap_header" >
+    </com.amap.api.maps.MapView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/title"
+        android:text="未来用时"
+        android:textSize="20dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/set_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@id/get_path"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/up_time"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/get_path"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+
+        android:background="@drawable/btn_shape"
+
+        android:text="路线"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/setting"
+        android:onClick="onClick"/>
+
+    <com.amap.map3d.demo.view.TravelView
+        android:id="@+id/travel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+    </com.amap.map3d.demo.view.TravelView>
+
+
+    <com.amap.map3d.demo.view.SettingView
+        android:id="@+id/setting_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+    
+
+</RelativeLayout>

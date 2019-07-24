@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/begin_time_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="出发时间"
+        android:layout_margin="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/begin_time_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/begin_time_text"/>
+
+    <TextView
+        android:id="@+id/arrive_time_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="到达时间"
+        app:layout_constraintLeft_toRightOf="@+id/begin_time_text"
+        app:layout_constraintRight_toLeftOf="@+id/distance_text"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/arrive_time_content"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toRightOf="@+id/begin_time_content"
+        app:layout_constraintRight_toLeftOf="@+id/distance_content"
+        app:layout_constraintTop_toBottomOf="@+id/arrive_time_text"/>
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部里程"
+        android:layout_margin="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/distance_content"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:text="45"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance_text"/>
+
+
+    <TextView
+        android:id="@+id/set_arrive_time_text"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="设定到达时间"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/begin_time_content"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/set_arrive_time_text_content"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="19:20"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/arrive_time_content"
+        app:layout_constraintLeft_toRightOf="@+id/set_arrive_time_text"/>
+
+    <com.amap.map3d.demo.ui.barChart.BarChartView
+        android:id="@+id/bar_chart_View"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

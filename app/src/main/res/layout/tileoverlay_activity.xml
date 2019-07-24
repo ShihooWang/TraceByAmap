@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/firstfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一楼" />
+
+        <Button
+            android:id="@+id/secondfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二楼" />
+
+        <Button
+            android:id="@+id/thridfloor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="三楼" />
+
+        <Button
+            android:id="@+id/opentile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开TileOverlay" />
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

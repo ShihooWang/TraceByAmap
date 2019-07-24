@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_hole_circle"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:onClick="clickCircleAddHole"
+            android:textSize="12sp"
+            android:text="Circle添加洞"/>
+        <Button
+            android:id="@+id/add_hole_polygon"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/btn_map_poi"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:onClick="clickPolygonAddHole"
+            android:textSize="12sp"
+            android:text="Polygon添加洞"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
